@@ -20,13 +20,15 @@ $max-width:1100px;
     color:set-text-color($color);
 }
 
-//Margin
+//Margin and Padding
 $spaceamounts:(1,2,3,4,5);
 
-
+// For earch loop in sass
 @each $space in $spaceamounts{
 
     //All around margin
+    // crreate classes m-1, m-2, m-3, m-4, m-5
+    // margin: 1rem, 2rem, 3rem, 4rem, 5rem
     .m-#{$space}{
         margin:#{$space}rem;
     }

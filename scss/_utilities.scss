@@ -104,6 +104,8 @@
 
 }
 
+// set-background mixin
+
 //Alerts
 .alert{
   padding:0.8rem;
@@ -122,10 +124,11 @@
   &.alert-dark{
       @include set-background($dark-color);
   }
+   
 
-  &.alert-danger{
-      @include set-background($danger-color);
-  }
+   &.alert-danger{
+       @include set-background($danger-color);
+   }
 }
 .round-img{
   border-radius: 50%;
